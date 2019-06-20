@@ -158,7 +158,8 @@ beginning of the line is needed to handle indentation."
     (line-beginning-position)))
 
 (defun fence-edit--next-line-beginning-position-at-pos (pos)
-  "Return the position of the beginning of the line after the line at POS if a newline character is found there.
+  "Return the position of the beginning of the line after the line at
+ POS if a newline character is found there.
 
 Used to find the position at which the code to edit begins, covering
 for a common case where the block start regexp doesn't match the
