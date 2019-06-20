@@ -168,7 +168,7 @@ edit."
   (interactive)
   (save-excursion
     (goto-char pos)
-    (if (not (eq (following-char) 10))
+    (if (not (looking-at "\n"))
 	(point)
       (forward-line)
       (line-beginning-position))))
