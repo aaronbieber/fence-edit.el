@@ -123,8 +123,8 @@ Used to strip and replace the indentation upon beginning/completion of editing."
 
 (define-minor-mode fence-edit-mode
   "A minor mode used when editing a fence-edit block."
-  nil " Fence-Edit"
-  fence-edit-mode-map)
+  :lighter " Fence-Edit"
+  :keymap fence-edit-mode-map)
 
 (defvar fence-edit-mode-hook nil
   "Hook run when fence-edit has set the block's language mode.
